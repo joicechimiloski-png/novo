@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Copa do mundo </title>
+<link rel="stylesheet" href="style.css">css
+ 
+</head>
+
+<body>
+
+<header>
+   <h1>Copa do Mundo </h1>
+   <p>Conheça a história de um dos jogos mais famosos do mundo.</p>
+</header>
+
+<main>
+
+   <img src="neymar .png" alt="Logo copa">
+
+   <div>
+       <h2>A história da Copa</h2>
+       <p><strong>Por:Joice Chimiloski</strong></p>
+       <p>
+        A primeira Copa do Mundo aconteceu em 1930, após muitos anos de tentativas de se organizar uma competição mundial de futebol. O início do evento está diretamente ligado ao surgimento da Fifa e sua atuação na popularização e profissionalização do futebol.
+       </p>
+       <p>
+        A Copa do Mundo é o maior torneio de futebol do planeta. Criada pela FIFA em 1930, a competição ocorre a cada quatro anos. O torneio reúne as melhores seleções nacionais e atrai bilhões de espectadores. 
+       </p>
+       <p>
+        A Copa do Mundo de Futebol é o maior evento esportivo do planeta. Ela une bilhões de pessoas, mexe com a economia global, aproxima culturas diferentes e cria memórias afetivas inesquecíveis para países inteiros. 
+       </p>
+   </div>
+   <img src="messizao.png" alt="Logo copa">
+
+   <div>
+       <h2>A Copa de 2026</h2>
+       <p><strong>Por:Joice Chimiloski</strong></p>
+       <p>
+        A Copa do Mundo de 2026 marcou a história do futebol por ser a primeira a ser realizada em três países diferentes — Canadá, Estados Unidos e México — e a contar com um recorde de 48 seleções participantes. O torneio apresentou um novo formato com 12 grupos de quatro equipes e um total de 104 partidas disputadas em 16 cidades-sede
+       </p>
+       <p>
+        A competição trouxe surpresas e novidades, incluindo seleções estreantes e confrontos intensos ao longo de mais de um mês de disputa entre 11 de junho e 19 de julho. A Seleção Brasileira avançou da fase de grupos, mas acabou sendo eliminada pela Noruega nas oitavas de final.
+       </p>
+       <p>
+        A inesquecível final da Copa do Mundo de 2026 ocorreu no MetLife Stadium, em Nova Jersey, no dia 19 de julho. A seleção da Espanha sagrou-se bicampeã mundial ao vencer a Argentina por 1 a 0 na prorrogação, coroando uma das edições mais grandiosas e lucrativas do espetáculo da FIFA.
+       </p>
+   </div>
+</main>
+
+<div class="botoes">
+
+   <button onclick="curtir()">
+       ❤️ <span id="likes">0</span>
+   </button>
+
+   <button onclick="gostar()">
+       👍 <span id="gostei">0</span>
+   </button>
+
+</div>
+
+<script>
+let likes = 0;
+let gostei = 0;
+
+
+let curtiu = false;
+let gostou = false;
+
+function curtir() {
+  if (curtiu) {
+      likes--;
+      curtiu = false;
+  } else {
+      likes++;
+      curtiu = true;
+  }
+  document.getElementById("likes").textContent = likes;
+}
+
+function gostar() {
+  if (gostou) {
+      gostei--;
+      gostou = false;
+  } else {
+      gostei++;
+      gostou = true;
+  }
+  document.getElementById("gostei").textContent = gostei;
+}
+</script>
+
+</body>
+</html>
